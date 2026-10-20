@@ -1,96 +1,30 @@
 <!doctype html>
-<html lang="zh-Hans">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LuckTick 支持 · Support</title>
-<meta name="description" content="LuckTick for Apple Watch: support, frequently asked questions and contact.">
+<title>LuckTick Support</title>
 <link rel="stylesheet" href="style.css">
+<script>
+(function () {
+  var map = [["zh", "zh-Hans"], ["ja", "ja"], ["ko", "ko"]];
+  var prefs = navigator.languages || [navigator.language || "en"];
+  var target = "en";
+  outer: for (var i = 0; i < prefs.length; i++) {
+    var p = (prefs[i] || "").toLowerCase();
+    if (p.indexOf("en") === 0) break;
+    for (var j = 0; j < map.length; j++) {
+      if (p.indexOf(map[j][0]) === 0) { target = map[j][1]; break outer; }
+    }
+  }
+  location.replace(target + "/index.html" + location.hash);
+})();
+</script>
 </head>
 <body>
-<main>
-<header>
-  <div class="mark">L</div>
-  <div>
-    <h1>LuckTick</h1>
-    <div class="sub">戴在手腕上的每日运势 · Your daily fortune, on your wrist</div>
-  </div>
-</header>
-
-<nav class="langs">
-  <a href="#zh">简体中文</a><a href="#en">English</a><a href="#ja">日本語</a><a href="#ko">한국어</a><a href="privacy.html">隐私政策 / Privacy Policy</a>
-</nav>
-
-<div class="card">
-  <p>联系我们 · Contact · お問い合わせ · 문의<br>
-  <a class="button" href="mailto:ethan.guan.work@outlook.com?subject=LuckTick">ethan.guan.work@outlook.com</a></p>
-</div>
-
-<section id="zh" lang="zh-Hans">
-<h2>简体中文</h2>
-<p>LuckTick 是一款 Apple Watch 上的每日运势 App，可以用八字或星座推演，结合「健康」数据校准当天分数。</p>
-<h3>怎么切换八字和星座？</h3>
-<p>在 App 里点右上角的齿轮进入「设置」，选择推演方式即可，随时生效。</p>
-<h3>怎么切换语言？</h3>
-<p>「设置」里可以选择简体中文、English、日本語、한국어，或跟随系统语言，切换后立即生效。</p>
-<h3>搜索出生地时提示连不上网络？</h3>
-<p>进入出生地这一步时，手表会询问是否允许 LuckTick 使用网络（可能显示为「蜂窝网络」），请选择允许。如果之前选择了不允许，可以在手表的「设置」里重新允许 LuckTick 使用网络（位置因机型而异，通常在「蜂窝网络」中）；也可以先跳过，之后在 App 的「设置」里补充出生地。</p>
-<h3>健康数据会上传吗？</h3>
-<p>不会。LuckTick 只读取睡眠、步数、心率变异性与静息心率，全部在手表本地使用。详见<a href="privacy.html#zh">隐私政策</a>。</p>
-<h3>怎么清除所有资料？</h3>
-<p>在 App 的「设置」中选择清除资料并重新开始，或直接删除 App。</p>
-<p class="meta">运势内容仅供娱乐与自我激励，不构成任何医疗、财务或人生建议。</p>
-</section>
-
-<section id="en" lang="en">
-<h2>English</h2>
-<p>LuckTick is a daily-fortune app for Apple Watch, with BaZi or Western astrology as the method and optional Health data to calibrate each day's score.</p>
-<h3>How do I switch between astrology and BaZi?</h3>
-<p>Tap the gear in the top-right corner to open Settings and choose the method. The change takes effect right away.</p>
-<h3>How do I change the language?</h3>
-<p>In Settings, choose English, Simplified Chinese, Japanese, Korean, or follow the system language. The switch is immediate.</p>
-<h3>Birthplace search says it can't connect</h3>
-<p>When you reach the birthplace step, the watch asks whether LuckTick may use the network (it may say cellular data). Please allow it. If you declined earlier, allow LuckTick again in the watch's Settings (usually under Cellular, depending on the model), or skip the step and add a birthplace later in the app's Settings.</p>
-<h3>Is my Health data uploaded?</h3>
-<p>No. LuckTick only reads sleep, steps, heart-rate variability and resting heart rate, and uses them on the watch. See the <a href="privacy.html#en">Privacy Policy</a>.</p>
-<h3>How do I clear all my data?</h3>
-<p>Clear your data and start over in the app's Settings, or delete the app.</p>
-<p class="meta">Readings are for entertainment and self-motivation only; they are not medical, financial or life advice.</p>
-</section>
-
-<section id="ja" lang="ja">
-<h2>日本語</h2>
-<p>LuckTick は Apple Watch の毎日の運勢アプリです。西洋占星術か四柱推命を選べ、ヘルスケアのデータでその日のスコアを調整できます。</p>
-<h3>占い方を切り替えるには？</h3>
-<p>右上の歯車から「設定」を開き、占い方を選びます。すぐに反映されます。</p>
-<h3>言語を変えるには？</h3>
-<p>「設定」で日本語、English、简体中文、한국어、またはシステムの言語を選べます。すぐに切り替わります。</p>
-<h3>出生地の検索で「接続できません」と表示される</h3>
-<p>出生地の画面に進むと、ウォッチが LuckTick のネットワーク使用（モバイル通信と表示される場合があります）を許可するか尋ねます。許可してください。以前に許可しなかった場合は、ウォッチの「設定」で LuckTick のネットワーク使用をもう一度許可するか（機種により異なりますが、通常は「モバイル通信」にあります）、この画面をスキップしてあとからアプリの「設定」で出生地を追加できます。</p>
-<h3>ヘルスケアのデータはアップロードされますか？</h3>
-<p>いいえ。睡眠、歩数、心拍変動、安静時心拍数を読み取るだけで、ウォッチ上で使います。<a href="privacy.html#ja">プライバシーポリシー</a>をご覧ください。</p>
-<h3>データをすべて消すには？</h3>
-<p>アプリの「設定」でデータを消去して最初からやり直すか、アプリを削除してください。</p>
-<p class="meta">運勢は娯楽と自己応援のためのもので、医療・金融・人生の助言ではありません。</p>
-</section>
-
-<section id="ko" lang="ko">
-<h2>한국어</h2>
-<p>LuckTick은 Apple Watch의 오늘의 운세 앱입니다. 서양 점성술이나 사주를 고를 수 있고, 건강 데이터로 그날의 점수를 보정합니다.</p>
-<h3>방식을 바꾸려면?</h3>
-<p>오른쪽 위 톱니바퀴로 「설정」을 열고 방식을 고르세요. 바로 적용됩니다.</p>
-<h3>언어를 바꾸려면?</h3>
-<p>「설정」에서 한국어, English, 简体中文, 日本語 또는 시스템 언어를 고를 수 있으며 바로 바뀝니다.</p>
-<h3>출생지 검색에서 「연결할 수 없음」이 나와요</h3>
-<p>출생지 화면에 들어가면 워치가 LuckTick의 네트워크 사용(셀룰러 데이터로 표시될 수 있음)을 허용할지 묻습니다. 허용해 주세요. 전에 허용하지 않았다면 워치의 「설정」에서 LuckTick의 네트워크 사용을 다시 허용하거나(기종에 따라 다르지만 보통 「셀룰러」에 있음), 이 단계를 건너뛰고 나중에 앱의 「설정」에서 출생지를 추가할 수 있습니다.</p>
-<h3>건강 데이터가 업로드되나요?</h3>
-<p>아니요. 수면, 걸음 수, 심박 변이도, 안정 시 심박수를 읽기만 하고 워치에서만 씁니다. <a href="privacy.html#ko">개인정보 처리방침</a>을 참고하세요.</p>
-<h3>데이터를 모두 지우려면?</h3>
-<p>앱의 「설정」에서 데이터를 지우고 처음부터 시작하거나 앱을 삭제하세요.</p>
-<p class="meta">운세는 재미와 자기 응원을 위한 것이며 의료, 금융, 인생에 관한 조언이 아닙니다.</p>
-</section>
-
-<footer>© 2026 LuckTick · <a href="privacy.html">隐私政策 / Privacy Policy</a></footer>
+<main class="wrap">
+<h1>LuckTick Support</h1>
+<p><a href="zh-Hans/index.html" lang="zh-Hans">简体中文</a> · <a href="en/index.html" lang="en">English</a> · <a href="ja/index.html" lang="ja">日本語</a> · <a href="ko/index.html" lang="ko">한국어</a></p>
 </main>
 </body>
 </html>
