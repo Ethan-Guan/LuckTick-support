@@ -91,7 +91,7 @@ def layout(lang: str, page: str, title: str, body: str) -> str:
 <main class="wrap">
 {body}
 </main>
-<footer class="wrap">LuckTick · <a href="index.html">{t['support']}</a> · <a href="privacy.html">{t['privacy']}</a></footer>
+<footer><div class="wrap">LuckTick · <a href="index.html">{t['support']}</a> · <a href="privacy.html">{t['privacy']}</a></div></footer>
 </body>
 </html>
 """
